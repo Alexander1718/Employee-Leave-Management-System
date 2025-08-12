@@ -1,0 +1,74 @@
+/* Main Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling */
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Table Cell Styling */
+td {
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+  background-color: #f2f6fc;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #e6f0ff;
+  transition: 0.2s ease-in-out;
+}
+
+/* Input field styling */
+input[type="text"] {
+  padding: 6px 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Forward Button */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Smooth Text */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f3f6fc;
+}
