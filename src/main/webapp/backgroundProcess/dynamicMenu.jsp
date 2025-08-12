@@ -64,7 +64,7 @@
       		response.sendRedirect("officer_dashboard.jsp");
       		%>
   			<nav>
-		      	<a href="/CLW_LEAVE/webPages/dashboard.jsp"><span class="material-icons">bar_chart</span> Dashboard</a>
+		      	<a href="/CLW_LEAVE/webPages/admin.jsp"><span class="material-icons">bar_chart</span> Dashboard</a>
 		       <a href="/CLW_LEAVE/webPages/officer_dashboard.jsp"><span class="material-icons">bar_chart</span>Pending Applications</a>
 		       <a href="/CLW_LEAVE/webPages/logout.jsp"><span class="material-icons">history</span>Logout</a>
 		  	</nav>
