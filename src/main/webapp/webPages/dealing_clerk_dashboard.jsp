@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<meta charset="UTF-8">
 <%@ page import="java.sql.*" %>
 <%
     // Get clerk ID from session
@@ -73,10 +75,10 @@
             "TO_CHAR(e.APP_DATE,'DD/MM/YYYY') AS APPLIED_ON " +
             "FROM emp_leave_tran e " +
             "JOIN emp_master m ON e.CONTROL_NO = m.CONTROL_NO " +
-            "WHERE e.LEAVE_STATS = 'N' AND e.DEALING_ASST = ? " +
+            "WHERE e.LEAVE_STATS = 'N' " +
             "ORDER BY e.APP_DATE DESC FETCH FIRST 1 ROWS ONLY"
         );
-        ps.setString(1, clerkId);
+        
         rs = ps.executeQuery();
         if (rs.next()) {
             pendingControlNo = rs.getString("CONTROL_NO");
